@@ -11,10 +11,10 @@ from final_win import *
 
 class Experiment():
     def __init__(self, age, test1, test2, test3):
-        self.age = age
-        self.t1 = test1
-        self.t2 = test2
-        self.t3 = test3
+        self.age = int(age)
+        self.t1 = int(test1)
+        self.t2 = int(test2)
+        self.t3 = int(test3)
 class TestWin(QWidget):
     def __init__(self):
         super().__init__()
@@ -135,6 +135,3 @@ class TestWin(QWidget):
         if time.toString('hh:mm:ss') == '00:00:00':
             self.timer.stop()
 
-app = QApplication([])
-mw = TestWin()
-app.exec_()

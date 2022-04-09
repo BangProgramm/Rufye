@@ -77,7 +77,7 @@ class FinalWin(QWidget):
                 return txt_res4
             else:
                 return txt_res5
-        if self.exp.age == 15
+        if self.exp.age >= 15:
             if self.index >= 15:
                 return txt_res1
             elif self.index < 15 and self.index >= 11:
@@ -90,7 +90,3 @@ class FinalWin(QWidget):
                 return txt_res5
         
 
-
-app = QApplication([])
-mw = FinalWin()
-app.exec_()
